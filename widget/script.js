@@ -32,7 +32,7 @@ define(['jquery', 'underscore', 'twigjs'], function ($, _, Twig) {
         var account_id = AMOCRM.constant('account').id;
 
         // Формируем URL с подстановкой ID
-        var bot_url = 'https://a.imprice.ai/amocrm_bk/amocrm/tg_bot/' + account_id;
+        var bot_url = 'https://a.imprice.ai/amocrm/amocrm/tg_bot/' + account_id;
 
         // Вставляем HTML с обновлённой ссылкой
         $settings_body.html(`
@@ -54,7 +54,7 @@ define(['jquery', 'underscore', 'twigjs'], function ($, _, Twig) {
             <!-- Кнопка -->
             <div style="margin-top: 20px;">
               <a class="button input"
-                href="https://a.imprice.ai/amocrm/amocrm/tg_bot/#ACCOUNT_ID#"
+                href="${bot_url}"
                 target="_blank"
                 style="background: #3498db; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-block; transition: 0.2s;">
                 Перейти в бота
