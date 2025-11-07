@@ -70,6 +70,7 @@ define(['jquery', 'underscore', 'twigjs'], function ($, _, Twig) {
 
           <div style="font-family: Arial, sans-serif; color: #222; max-width: 600px; margin: 30px auto; padding: 24px; line-height: 1.6; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
 
+          <h3 style="color: #0072CE;">Инструкция:</h3>
             <section>
               <p>
                 <strong>После установки интеграции</strong> у вас появится кнопка 
@@ -90,11 +91,11 @@ define(['jquery', 'underscore', 'twigjs'], function ($, _, Twig) {
                 При нажатии на кнопку <strong>«Настройки»</strong> вы сможете:
               </p>
 
-              <ul style="text-align: left; margin: 16px 0 16px 20px; padding: 0;">
+              <ol style="padding-left: 20px;">
                 <li>выбрать текущий аккаунт amoCRM;</li>
                 <li>указать воронки и этапы, которые будут считаться завершающими;</li>
                 <li>включить отправку дайджеста.</li>
-              </ul>
+              </ol>
 
               <p>
                 После сохранения настроек вам станут доступны 
