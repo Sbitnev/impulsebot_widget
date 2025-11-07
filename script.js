@@ -39,8 +39,8 @@ define(['jquery', 'underscore', 'twigjs'], function ($, _, Twig) {
           <div style="font-family: Arial, sans-serif; color: #222; max-width: 600px; margin: auto; padding: 20px; text-align: center; line-height: 1.6; background-color: #f9f9f9; border-radius: 8px;">
 
             <!-- Заголовок -->
-            <h2 style="color: #0072CE;">Виджет успешно установлен 🎉</h2>
-
+            <h2 style="color: #0072CE;">Виджет успешно установлен</h2>
+            
             <!-- Краткая информация -->
             <p style="font-size: 16px;">
               Теперь вы можете получать управленческую аналитику из вашей <b>amoCRM</b> прямо в <b>Telegram</b> — 
@@ -54,7 +54,7 @@ define(['jquery', 'underscore', 'twigjs'], function ($, _, Twig) {
             <!-- Кнопка -->
             <div style="margin-top: 20px;">
               <a class="button input"
-                href="${bot_url}"
+                href="https://a.imprice.ai/amocrm/amocrm/tg_bot/#ACCOUNT_ID#"
                 target="_blank"
                 style="background: #3498db; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-block; transition: 0.2s;">
                 Перейти в бота
@@ -65,6 +65,43 @@ define(['jquery', 'underscore', 'twigjs'], function ($, _, Twig) {
             <p style="margin-top: 15px; color: #888; font-size: 14px;">
               Нажмите кнопку, чтобы запустить ImpulseBot в Telegram и завершить настройку.
             </p>
+
+          </div>
+
+          <div style="font-family: Arial, sans-serif; color: #222; max-width: 600px; margin: 30px auto; padding: 24px; line-height: 1.6; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+
+            <section>
+              <p>
+                <strong>После установки интеграции</strong> у вас появится кнопка 
+                <strong>«Перейти в бота»</strong>. Нажав её, вы перейдёте в Telegram‑бота, 
+                и ваш аккаунт amoCRM будет автоматически привязан.
+              </p>
+
+              <p style="background: #fffbea; padding: 10px 14px; border-left: 4px solid #f1c40f; border-radius: 4px; font-style: italic;">
+                <em>Обратите внимание:</em> данные появятся не сразу — первая синхронизация 
+                может занять до <strong>20 минут</strong>.
+              </p>
+
+              <p>
+                Теперь вы можете задавать боту вопросы в свободной форме прямо в чате.
+              </p>
+
+              <p>
+                При нажатии на кнопку <strong>«Настройки»</strong> вы сможете:
+              </p>
+
+              <ul style="text-align: left; margin: 16px 0 16px 20px; padding: 0;">
+                <li>выбрать текущий аккаунт amoCRM;</li>
+                <li>указать воронки и этапы, которые будут считаться завершающими;</li>
+                <li>включить отправку дайджеста.</li>
+              </ul>
+
+              <p>
+                После сохранения настроек вам станут доступны 
+                <strong>быстрые отчёты и прогнозы</strong>. 
+                Чтобы воспользоваться ими, используйте встроенную клавиатуру бота.
+              </p>
+            </section>
 
           </div>
         `);
